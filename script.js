@@ -4,6 +4,16 @@ const cardTitle = document.querySelector(".card-title");
 const listGroup = document.querySelectorAll(".list-group li");
 const cardImg = document.querySelector(".card-img");
 const listDiv = document.querySelector(".list-group");
+const resetBtn = document.querySelector("#reset-button");
+
+resetBtn.addEventListener("click", (event) => {
+  cardTitle.innerHTML = "No Data Yet Fetched";
+  listDiv.style.display = "none";
+  resetBtn.style.display = "none";
+  btn.style.display = "block";
+  cardImg.src =
+    "https://www.mistay.in/travel-blog/content/images/2020/06/cover-9.jpg";
+});
 
 btn.addEventListener("click", async (event) => {
   event.preventDefault();
@@ -46,6 +56,8 @@ btn.addEventListener("click", async (event) => {
         listGroup[i].innerHTML = cityResultArray[i];
       }
       listDiv.style.display = "block";
+      btn.style.display = "none";
+      resetBtn.style.display = "block";
     }
   } catch (error) {
     console.log(error);

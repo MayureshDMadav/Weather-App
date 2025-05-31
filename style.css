@@ -32,6 +32,11 @@ body {
   gap: 0.5rem;
 }
 
+#reset-button{
+  color: white;
+  display: none;
+}
+
 .custom-btn-css {
   background-color: transparent;
   color: black;
