@@ -11,7 +11,7 @@ let input = null;
 const options = {
   method: "GET",
   headers: {
-    "x-rapidapi-key": "9192bec45bmsh602ac3bc1adcc05p12a311jsnc89398bab041",
+    "x-rapidapi-key": "51ab8189admsh727e5ee91ff64efp199dc4jsn2e272ff7f9b7",
     "x-rapidapi-host": "open-weather13.p.rapidapi.com",
   },
 };
