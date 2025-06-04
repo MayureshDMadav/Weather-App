@@ -8,13 +8,7 @@ const resetBtn = document.querySelector("#reset-button");
 const refeshBtn = document.querySelector("#refesh-button");
 let input = null;
 
-const options = {
-  method: "GET",
-  headers: {
-    "x-rapidapi-key": "51ab8189admsh727e5ee91ff64efp199dc4jsn2e272ff7f9b7",
-    "x-rapidapi-host": "open-weather13.p.rapidapi.com",
-  },
-};
+
 
 resetBtn.addEventListener("click", (event) => {
   event.preventDefault();
